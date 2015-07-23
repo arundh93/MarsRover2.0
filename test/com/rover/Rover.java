@@ -19,6 +19,8 @@ public class Rover {
             this.xPosition++;
         if(this.orientation == 'W')
             this.xPosition--;
+        if(this.orientation == 'S')
+            this.yPosition--;
     }
 
     @Override
