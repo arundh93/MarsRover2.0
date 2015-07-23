@@ -43,4 +43,26 @@ public class Rover {
         result = 31 * result + (orientation != null ? orientation.hashCode() : 0);
         return result;
     }
+
+    public void changeOrientation(char l) {
+        switch (this.orientation) {
+
+            case 'N':
+                if (l == 'L')
+                    this.orientation = 'W';
+                break;
+            case 'S':
+                if (l == 'L')
+                    this.orientation = 'E';
+                break;
+            case 'E':
+                if (l == 'L')
+                    this.orientation = 'S';
+                break;
+            case 'W':
+                if (l == 'L')
+                    this.orientation = 'N';
+                break;
+        }
+    }
 }
