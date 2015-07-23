@@ -25,4 +25,14 @@ public class MarsRoverTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void movesTo22From32ForMoveCommandWhenOrientationIsWest() {
+        Rover actual = new Rover(3, 2, 'W');
+        Rover expected = new Rover(2, 2, 'W');
+
+        actual.moveForward();
+
+        assertEquals(expected, actual);
+    }
 }
