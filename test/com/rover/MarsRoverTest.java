@@ -55,4 +55,14 @@ public class MarsRoverTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void changesOrientationForRCommandAtArbitraryLocation() {
+        Rover actual = new Rover(4, 3, 'S');
+        Rover expected = new Rover(4, 3, 'W');
+
+        actual.changeOrientation('R');
+
+        assertEquals(expected, actual);
+    }
 }

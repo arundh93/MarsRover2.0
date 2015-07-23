@@ -50,18 +50,30 @@ public class Rover {
             case 'N':
                 if (l == 'L')
                     this.orientation = 'W';
+                if (l == 'R')
+                    this.orientation = 'E';
+
                 break;
             case 'S':
                 if (l == 'L')
                     this.orientation = 'E';
+                if (l == 'R')
+                    this.orientation = 'W';
+
                 break;
             case 'E':
                 if (l == 'L')
                     this.orientation = 'S';
+                if (l == 'R')
+                    this.orientation = 'N';
+
                 break;
             case 'W':
                 if (l == 'L')
                     this.orientation = 'N';
+                if (l == 'R')
+                    this.orientation = 'S';
+
                 break;
         }
     }
