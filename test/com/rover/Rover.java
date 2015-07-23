@@ -13,7 +13,10 @@ public class Rover {
     }
 
     public void moveForward() {
-        this.yPosition++;
+        if(this.orientation == 'N')
+            this.yPosition++;
+        if(this.orientation == 'E')
+            this.xPosition++;
     }
 
     @Override
