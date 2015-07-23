@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<project name="MarsRover2.0" default="unittest">
+
+    <path id="classpath">
+        <fileset dir="lib" includes="*.jar"/>
+    </path>
+
+    <target name="compile">
+        <mkdir dir="build"/>
+        <javac srcdir="src;test" destdir="build" classpathref="classpath"/>
+    </target>
+
+
+    <target name="unittest" depends="compile">
+        <junit haltonfailure="true" printsummary="true" showoutput="yes">
+            <test name="com.rover.MarsRoverTest"></test>
+            <classpath>
+                <path refid="classpath"/>
+                <pathelement location="build"/>
+            </classpath>
+        </junit>
+    </target>
+    <target name="clean">
+        <delete>
+            <fileset dir="." includes="**/*.class"/>
+        </delete>
+    </target>
+</project>
