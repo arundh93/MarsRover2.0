@@ -44,36 +44,35 @@ public class Rover {
         return result;
     }
 
-    public void changeOrientation(char l) {
+    public void changeOrientation(char command) {
         switch (this.orientation) {
 
             case 'N':
-                if (l == 'L')
+                if (command == 'L')
                     this.orientation = 'W';
-                if (l == 'R')
+                if (command == 'R')
                     this.orientation = 'E';
-
                 break;
+
             case 'S':
-                if (l == 'L')
+                if (command == 'L')
                     this.orientation = 'E';
-                if (l == 'R')
+                if (command == 'R')
                     this.orientation = 'W';
-
                 break;
+
             case 'E':
-                if (l == 'L')
+                if (command == 'L')
                     this.orientation = 'S';
-                if (l == 'R')
+                if (command == 'R')
                     this.orientation = 'N';
-
                 break;
-            case 'W':
-                if (l == 'L')
-                    this.orientation = 'N';
-                if (l == 'R')
-                    this.orientation = 'S';
 
+            case 'W':
+                if (command == 'L')
+                    this.orientation = 'N';
+                if (command == 'R')
+                    this.orientation = 'S';
                 break;
         }
     }
