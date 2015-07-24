@@ -13,7 +13,7 @@
 
     <target name="unittest" depends="compile">
         <junit haltonfailure="true" printsummary="true" showoutput="yes">
-            <test name="com.rover.MarsRoverTest"></test>
+            <test name="com.rover.RoverTest"></test>
             <classpath>
                 <path refid="classpath"/>
                 <pathelement location="build"/>

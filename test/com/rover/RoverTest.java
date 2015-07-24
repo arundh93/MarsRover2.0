@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class MarsRoverTest {
+public class RoverTest {
 
     @Test
     public void movesTo01From00ForMoveCommandWhenOrientationIsNorth() {

@@ -13,13 +13,13 @@ public class Rover {
     }
 
     public void moveForward() {
-        if(this.orientation == 'N')
+        if (this.orientation == 'N')
             this.yPosition++;
-        if(this.orientation == 'E')
+        if (this.orientation == 'E')
             this.xPosition++;
-        if(this.orientation == 'W')
+        if (this.orientation == 'W')
             this.xPosition--;
-        if(this.orientation == 'S')
+        if (this.orientation == 'S')
             this.yPosition--;
     }
 
